@@ -26,9 +26,11 @@
 
 4. 返回实时音视频控制台，单击【粘贴完成，下一步】。
 5. 单击【关闭指引，进入控制台管理应用】。
-6. demo中演示了自定义采集音频，需要pcm文件，请自行获取。
-7. 包文件夹下，有一个pcm音乐文件，提供测试使用，可以把它放到手机本地sd下audioResearch/PCM路径下。
-8. pcm文件名称：bei_yi_wang_de_shi_guang.pcm  、 44100hz 、 双声道 、 16位宽，无损音质。
 
 >!本文提到的生成 UserSig 的方案是在客户端代码中配置 SECRETKEY，该方法中 SECRETKEY 很容易被反编译逆向破解，一旦您的密钥泄露，攻击者就可以盗用您的腾讯云流量，因此**该方法仅适合本地跑通 Demo 和功能调试**。
 >正确的 UserSig 签发方式是将 UserSig 的计算代码集成到您的服务端，并提供面向 App 的接口，在需要 UserSig 时由您的 App 向业务服务器发起请求获取动态 UserSig。更多详情请参见 [服务端生成 UserSig](https://cloud.tencent.com/document/product/647/17275#Server)。
+
+### Demo 运行效果
+![Screenshot_2022-02-21-17-06-01-01](https://user-images.githubusercontent.com/49272458/154923416-87b2fce3-5636-4d29-a241-3de58829add9.png)
+
+
