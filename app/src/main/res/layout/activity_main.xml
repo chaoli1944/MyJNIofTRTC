@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/local"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/localView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/et_roomid"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/remoteView"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <EditText
+        android:id="@+id/et_roomid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="roomid"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et_userid"
+         />
+    <EditText
+        android:id="@+id/et_userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="userid"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/et_roomid"
+        app:layout_constraintRight_toLeftOf="@+id/bt_enterRoom"
+        app:layout_constraintRight_toRightOf="parent"
+         />
+    <Button
+        android:id="@+id/bt_enterRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进房"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/et_userid"
+        app:layout_constraintRight_toRightOf="@id/bt_logView"/>
+
+    <Button
+        android:id="@+id/bt_logView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/bt_enterRoom"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@mipmap/rtc_log_button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
