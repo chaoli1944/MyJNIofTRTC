@@ -31,6 +31,8 @@
 >正确的 UserSig 签发方式是将 UserSig 的计算代码集成到您的服务端，并提供面向 App 的接口，在需要 UserSig 时由您的 App 向业务服务器发起请求获取动态 UserSig。更多详情请参见 [服务端生成 UserSig](https://cloud.tencent.com/document/product/647/17275#Server)。
 
 ### Demo 运行效果
-![Screenshot_2022-02-21-17-06-01-01](https://user-images.githubusercontent.com/49272458/154923416-87b2fce3-5636-4d29-a241-3de58829add9.png)
+![Screenshot_2022-02-21-17-06-01-01](https://user-images.githubusercontent.com/49272458/155638569-7cd9777b-06eb-4c78-ad44-f25f931fcc88.png)
+
+
 
 
