@@ -17,8 +17,8 @@
 
 
 ### 配置 Demo 工程文件
-1. 使用 Android Studio（3.5及以上的版本）打开源码工程`TRTC-API-Example`
-2. 找到并打开`TRTC-API-Example/Debug/src/main/java/com/tencent/trtc/debug/GenerateTestUserSig.java`文件。
+1. 使用 Android Studio（3.5及以上的版本）打开源码工程`MyJNIofTRTC`
+2. 找到并打开`MyJNIofTRTC/app/src/main/java/com/chaoli/myjnioftrtc/GenerateTestUserSig.java`文件。
 3. 设置`GenerateTestUserSig.java`文件中的相关参数：
   - `SDKAPPID`：默认为 PLACEHOLDER ，请设置为实际的 SDKAppID；
   - `SECRETKEY`：默认为空字符串，请设置为实际的密钥信息；
